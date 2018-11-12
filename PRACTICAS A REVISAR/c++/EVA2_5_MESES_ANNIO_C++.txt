@@ -1,0 +1,86 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "Teclea un numero del 1 al 12";
+    int mes;
+    
+    cin >> mes;
+    if (mes == 1) {
+        cout << "Enero" << endl;
+    } else {
+        if (mes == 2) {
+            cout << "Febrero" << endl;
+        } else {
+            if (mes == 3) {
+                cout << Marzo;
+            } else {
+                if (mes == 4) {
+                    cout << "Abril" << endl;
+                } else {
+                    if (mes == 5) {
+                        cout << "Mayo" << endl;
+                    } else {
+                        if (mes == 6) {
+                            cout << "Junio" << endl;
+                        } else {
+                            if (mes == 7) {
+                                cout << "Julio" << endl;
+                            } else {
+                                if (mes == 8) {
+                                    cout << "Agosto" << endl;
+                                } else {
+                                    if (mes == 9) {
+                                        cout << "Septiembre" << endl;
+                                    } else {
+                                        if (mes == 10) {
+                                            cout << "Octubre" << endl;
+                                        } else {
+                                            if (mes == 11) {
+                                                cout << "Noviembre" << endl;
+                                            } else {
+                                                if (mes == 12) {
+                                                    cout << "Diciembre" << endl;
+                                                } else {
+                                                    if (mes > 12) {
+                                                        cout << "Valor fuera de rango" << endl;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

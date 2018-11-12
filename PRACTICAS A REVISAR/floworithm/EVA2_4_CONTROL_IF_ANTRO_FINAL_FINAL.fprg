@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-03 09:38:59 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOTozMzowOCBhLiBtLjsyOTQ0"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOTozMzoxNSBhLiBtLjsxO3RlbXBvcmFsMjtMQUJBMTMyMDUwOzIwMTgtMTAtMDM7MDk6MjQ6NTMgYS4gbS47RVZBMl80X0FOVFJPIEZJTkFMLmZwcmc7Nzg4Mw=="/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOTozODo1OSBhLiBtLjs4OzMwNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Cual es tu edad?&quot;" newline="True"/>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <input variable="edad"/>
+            <output expression="&quot;&#191;Tenes INE?&quot;" newline="True"/>
+            <declare name="tieneIne" type="Boolean" array="False" size=""/>
+            <input variable="tieneIne"/>
+            <if expression="(edad&gt;=18) &amp;&amp; (tieneIne = true)">
+                <then>
+                    <output expression="&quot;Diviertete&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nel pastel&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-19 09:43:53 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDk7MjAxOC0wOS0xOTswODo1OTowMyBhLiBtLjsyOTY5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDk7MjAxOC0wOS0xOTswOTo0Mzo1MyBhLiBtLjs2OzMwODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Que calificacion sacaste en fundamentos de programacion?&quot;" newline="True"/>
+            <declare name="Calif" type="Real" array="False" size=""/>
+            <input variable="Calif"/>
+            <output expression="&quot;Tu calificacion es: &quot;" newline="False"/>
+            <output expression="Calif" newline="True"/>
+            <if expression="Calif &gt;= 70">
+                <then>
+                    <output expression="&quot;Ya pasaste&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Suerte en el repe&quot;" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

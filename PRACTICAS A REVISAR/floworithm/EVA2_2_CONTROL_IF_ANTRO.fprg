@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-03 09:21:54 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOTowODo0MSBhLiBtLjsyOTQz"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOToyMTo1NCBhLiBtLjsxOzMwNTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Condicion para saber si entras a antro&quot;" newline="True"/>
+            <output expression="&quot;&#191;Cual es tu edad?&quot;" newline="True"/>
+            <declare name="edad" type="Real" array="False" size=""/>
+            <input variable="edad"/>
+            <if expression="edad&gt;18">
+                <then>
+                    <output expression="&quot;DIVIERTETE&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;VUELVE CUANDO TENGAS 18&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,18 @@
+print("Teclea tu calificacion")
+calif = int(input())
+if calif == 100:
+    print("Felicidades, sacaste A", end='', flush=True)
+else:
+    if calif == 90:
+        print("Feliciades, sacaste B")
+    else:
+        if calif == 80:
+            print("Sacaste C")
+        else:
+            if calif == 70:
+                print("APENAS, sacaste D")
+            else:
+                if calif == 60:
+                    print("¡UPS!, sacaste F")
+                else:
+                    print("Calificacion fuera de rango")

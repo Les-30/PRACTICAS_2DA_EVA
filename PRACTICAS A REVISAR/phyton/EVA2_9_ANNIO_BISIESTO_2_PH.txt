@@ -1,0 +1,9 @@
+print("ingresa el año")
+año = int(input())
+mod1 = año % 4
+mod2 = año % 100
+mod3 = año % 400
+if mod1 == 0 and mod2 == 0 or mod3 == 0:
+    print("es año bisiesto")
+else:
+    print("no es año bisiesto")

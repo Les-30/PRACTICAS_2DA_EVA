@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-04 09:52:05 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDk7MjAxOC0xMC0wNDswOToxMjowOSBhLiBtLjsyOTUx"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDk7MjAxOC0xMC0wNDswOTo1MjowNSBhLiBtLjs1OzMwNjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Teclea tu calificacion&quot;" newline="True"/>
+            <declare name="calif" type="Integer" array="False" size=""/>
+            <input variable="calif"/>
+            <if expression="calif == 100">
+                <then>
+                    <output expression="&quot;Felicidades, sacaste A&quot;" newline="False"/>
+                </then>
+                <else>
+                    <if expression="calif == 90">
+                        <then>
+                            <output expression="&quot;Feliciades, sacaste B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="calif == 80">
+                                <then>
+                                    <output expression="&quot;Sacaste C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="calif == 70">
+                                        <then>
+                                            <output expression="&quot;APENAS, sacaste D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="calif == 60">
+                                                <then>
+                                                    <output expression="&quot;&#161;UPS!, sacaste F&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Calificacion fuera de rango&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

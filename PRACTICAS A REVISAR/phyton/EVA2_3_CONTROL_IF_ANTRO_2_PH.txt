@@ -1,0 +1,6 @@
+print("¿Tienes tu ine?")
+tieneIne = (input().lower == 'true')
+if tieneIne == True:
+    print("Si tiene")
+else:
+    print("No tiene")

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Les"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 08:19:26 p. m."/>
+        <attribute name="created" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0xMS0xMTswODowMDo0NSBwLiBtLjsyNDk0"/>
+        <attribute name="edited" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0xMS0xMTswODoxOToyNiBwLiBtLjsxOzI2MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;terminaste tus materias?&quot;" newline="True"/>
+            <declare name="matTermin" type="Boolean" array="False" size=""/>
+            <input variable="matTermin"/>
+            <if expression="matTermin == true">
+                <then>
+                    <output expression="&quot;&#191;liberaste tu servicio?&quot;" newline="True"/>
+                    <declare name="servLib" type="Boolean" array="False" size=""/>
+                    <input variable="servLib"/>
+                    <if expression="servLib == true">
+                        <then>
+                            <output expression="&quot;&#191;terminaste tus residencias?&quot;" newline="True"/>
+                            <declare name="resTer" type="Boolean" array="False" size=""/>
+                            <input variable="resTer"/>
+                            <if expression="resTer == true">
+                                <then>
+                                    <output expression="&quot;te puedes titular&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;no te puedes titular&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;no te puedes titular&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;no te puedes titiular&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

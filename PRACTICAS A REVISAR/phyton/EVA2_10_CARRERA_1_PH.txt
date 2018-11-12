@@ -1,0 +1,16 @@
+print("¿terminaste tus materias?")
+matTermin = (input().lower == 'true')
+if matTermin == True:
+    print("¿liberaste tu servicio?")
+    servLib = (input().lower == 'true')
+    if servLib == True:
+        print("¿terminaste tus residencias?")
+        resTer = (input().lower == 'true')
+        if resTer == True:
+            print("te puedes titular")
+        else:
+            print("no te puedes titular")
+    else:
+        print("no te puedes titular")
+else:
+    print("no te puedes titiular")

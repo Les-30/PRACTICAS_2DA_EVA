@@ -1,0 +1,56 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "Teclea tu calificacion" << endl;
+    int calif;
+    
+    cin >> calif;
+    if (calif == 100) {
+        cout << "Felicidades, sacaste A";
+    } else {
+        if (calif == 90) {
+            cout << "Feliciades, sacaste B" << endl;
+        } else {
+            if (calif == 80) {
+                cout << "Sacaste C" << endl;
+            } else {
+                if (calif == 70) {
+                    cout << "APENAS, sacaste D" << endl;
+                } else {
+                    if (calif == 60) {
+                        cout << "¡UPS!, sacaste F" << endl;
+                    } else {
+                        cout << "Calificacion fuera de rango" << endl;
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

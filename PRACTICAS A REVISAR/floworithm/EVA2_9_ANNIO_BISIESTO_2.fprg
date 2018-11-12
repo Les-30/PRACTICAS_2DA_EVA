@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Les"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 08:00:42 p. m."/>
+        <attribute name="created" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0xMS0xMTswNzo0OToxMSBwLiBtLjsyNDk5"/>
+        <attribute name="edited" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0xMS0xMTswODowMDo0MiBwLiBtLjsyOzI2MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;ingresa el a&#241;o&quot;" newline="True"/>
+            <declare name="a&#241;o" type="Integer" array="False" size=""/>
+            <input variable="a&#241;o"/>
+            <declare name="mod1" type="Integer" array="False" size=""/>
+            <assign variable="mod1" expression="a&#241;o % 4"/>
+            <declare name="mod2" type="Integer" array="False" size=""/>
+            <assign variable="mod2" expression="a&#241;o % 100"/>
+            <declare name="mod3" type="Integer" array="False" size=""/>
+            <assign variable="mod3" expression="a&#241;o % 400"/>
+            <if expression="(mod1 == 0) &amp;&amp; (mod2 == 0)|| (mod3 == 0)">
+                <then>
+                    <output expression="&quot;es a&#241;o bisiesto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no es a&#241;o bisiesto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

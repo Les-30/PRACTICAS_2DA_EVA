@@ -1,0 +1,40 @@
+print("Teclea un numero del 1 al 12", end='', flush=True)
+mes = int(input())
+if mes == 1:
+    print("Enero")
+else:
+    if mes == 2:
+        print("Febrero")
+    else:
+        if mes == 3:
+            print(Marzo, end='', flush=True)
+        else:
+            if mes == 4:
+                print("Abril")
+            else:
+                if mes == 5:
+                    print("Mayo")
+                else:
+                    if mes == 6:
+                        print("Junio")
+                    else:
+                        if mes == 7:
+                            print("Julio")
+                        else:
+                            if mes == 8:
+                                print("Agosto")
+                            else:
+                                if mes == 9:
+                                    print("Septiembre")
+                                else:
+                                    if mes == 10:
+                                        print("Octubre")
+                                    else:
+                                        if mes == 11:
+                                            print("Noviembre")
+                                        else:
+                                            if mes == 12:
+                                                print("Diciembre")
+                                            else:
+                                                if mes > 12:
+                                                    print("Valor fuera de rango")

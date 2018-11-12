@@ -1,0 +1,56 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "¿terminaste tus materias?" << endl;
+    bool matTermin;
+    
+    cin >> matTermin;
+    if (matTermin == true) {
+        cout << "¿liberaste tu servicio?" << endl;
+        bool servLib;
+        
+        cin >> servLib;
+        if (servLib == true) {
+            cout << "¿terminaste tus residencias?" << endl;
+            bool resTer;
+            
+            cin >> resTer;
+            if (resTer == true) {
+                cout << "te puedes titular" << endl;
+            } else {
+                cout << "no te puedes titular" << endl;
+            }
+        } else {
+            cout << "no te puedes titular" << endl;
+        }
+    } else {
+        cout << "no te puedes titiular" << endl;
+    }
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

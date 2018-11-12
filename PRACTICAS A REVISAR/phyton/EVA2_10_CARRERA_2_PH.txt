@@ -1,0 +1,7 @@
+serv = True
+mat = True
+resid = True
+if mat == True and serv == True and resid == True:
+    print("ya puedes titularte")
+else:
+    print("no te puedes titular")

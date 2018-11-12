@@ -1,0 +1,8 @@
+print("¿Cual es tu edad?")
+edad = int(input())
+print("¿Tenes INE?")
+tieneIne = (input().lower == 'true')
+if edad >= 18 and tieneIne == True:
+    print("Diviertete")
+else:
+    print("Nel pastel")

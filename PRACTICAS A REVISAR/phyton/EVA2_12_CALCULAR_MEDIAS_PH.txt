@@ -1,0 +1,18 @@
+suma = 0
+print("ingresa la edad 1")
+edad = float(input())
+suma = suma + edad
+print("ingresa la edad 2")
+edad = float(input())
+suma = suma + edad
+print("ingresa la edad 3")
+edad = float(input())
+suma = suma + edad
+print("ingresa la edad 4")
+edad = float(input())
+suma = suma + edad
+print("ingresa la edad 5")
+edad = float(input())
+suma = suma + edad
+media = suma / 5
+print("la media es: " + media)

@@ -1,0 +1,26 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "¿Tienes tu ine?" << endl;
+    bool tieneIne;
+    
+    cin >> tieneIne;
+    if (tieneIne == true) {
+        cout << "Si tiene" << endl;
+    } else {
+        cout << "No tiene" << endl;
+    }
+    return 0;
+}
+

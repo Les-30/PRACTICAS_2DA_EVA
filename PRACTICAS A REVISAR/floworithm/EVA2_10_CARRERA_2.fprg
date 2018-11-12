@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Les"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 08:25:24 p. m."/>
+        <attribute name="created" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0xMS0xMTswODoxOTozNSBwLiBtLjsyNTAz"/>
+        <attribute name="edited" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0xMS0xMTswODoyNToyNCBwLiBtLjsyOzI2MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mat" type="Boolean" array="False" size=""/>
+            <declare name="serv" type="Boolean" array="False" size=""/>
+            <declare name="resid" type="Boolean" array="False" size=""/>
+            <assign variable="serv" expression="true"/>
+            <assign variable="mat" expression="true"/>
+            <assign variable="resid" expression="true"/>
+            <if expression="(mat == true)&amp;&amp; (serv= true)&amp;&amp; (resid== true)">
+                <then>
+                    <output expression="&quot;ya puedes titularte&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no te puedes titular&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

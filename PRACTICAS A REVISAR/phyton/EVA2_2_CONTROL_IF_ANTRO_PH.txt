@@ -1,0 +1,7 @@
+print("Condicion para saber si entras a antro")
+print("¿Cual es tu edad?")
+edad = float(input())
+if edad > 18:
+    print("DIVIERTETE")
+else:
+    print("VUELVE CUANDO TENGAS 18")

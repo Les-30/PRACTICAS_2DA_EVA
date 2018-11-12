@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-03 09:32:53 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOToyNDo1MyBhLiBtLjsyOTQ0"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNTA7MjAxOC0xMC0wMzswOTozMjo1MyBhLiBtLjszOzMwNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Cual es tu edad?&quot;" newline="True"/>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <input variable="edad"/>
+            <output expression="&quot;&#191;Tenes INE?&quot;" newline="True"/>
+            <declare name="tieneIne" type="Boolean" array="False" size=""/>
+            <input variable="tieneIne"/>
+            <if expression="edad&gt;= 18">
+                <then>
+                    <if expression="tieneIne= true">
+                        <then>
+                            <output expression="&quot;Diviertete&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Que te vallas te dije&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Regresa luego&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
